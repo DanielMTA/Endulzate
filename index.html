@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endulzate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>📦 Endulzate - Gestión de Productos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Stock</th>
+                <th>Precio Compra</th>
+                <th>Precio Venta</th>
+            </tr>
+        </thead>
+        <tbody id="productos-lista"> <!--Aqui aparecen los productos--> </tbody>
+    </table> <button id="agregar-btn">➕ Agregar Producto</button>
+    <!--<button id="eliminar-btn">❌ Eliminar Producto</button>-->
+    <div style="margin: 12px 0;">
+        <input type="text" id="nombre" placeholder="Nombre del producto">
+        <input type="number" id="stock" placeholder="Stock">
+        <input type="number" id="precioCompra" placeholder="Precio compra">
+        <input type="number" id="precioVenta" placeholder="Precio venta">
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
